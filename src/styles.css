@@ -22,15 +22,16 @@
     
     --color-clr-accent: #3c5070;
     --color-clr-btn: #e0c58f;
+    --color-clr-btn-hover: #ae8625;
 
 	/* accent color ------------------------------ */
-	--color-clr-accent: #4F57C4; /* ou  615FFF */ 
+	/* --color-clr-accent: #4F57C4; ou  615FFF  */
 	--color-clr-hover: #615FFF; /* ou 432DD7 */
 	--color-clr-border: #F3F3F3;
 }
 
 img{
-    color: #d9cbc2;
+    color: #e0c58f;
 }
 
 @property --rotate {

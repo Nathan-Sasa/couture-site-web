@@ -1,0 +1,31 @@
+<menu
+    *ngIf="isOpen"
+    (click)="close()"
+    class="fixed lg:hidden inset-0 z-40 h-[10vh] w-screen bg-clr-bg-dark transition-opacity durarion-300 | flex items-center pl-3"
+    >
+   <ul
+    class="flex items-center gap-4">
+        <li>
+            <button
+                [routerLink]="['']"
+                [routerLinkActive]="'gold'"
+                class="text-clr-text-white text-sm md:text:lg | cursor-pointer transition-all duration-300 ">
+                Acceuil
+            </button>
+        </li>
+        <li>
+            <button
+                [routerLink]="['/album']"
+                class="text-clr-text-white text-sm md:text:lg | cursor-pointer transition-all duration-300 hover:text-clr-btn">
+                Album
+            </button>
+        </li>
+        <li>
+            <button
+                [routerLink]="['/contact']"
+                class="text-clr-text-white text-sm md:text:lg | cursor-pointer transition-all duration-300 hover:text-clr-btn">
+                Contact
+            </button>
+        </li>
+   </ul>
+</menu>

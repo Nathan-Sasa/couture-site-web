@@ -1,5 +1,5 @@
 <div
-    class="w-full h-[10vh] sticky top-0 flex items-center justify-between || bg-clr-bg-dark px-4">
+    class="w-full h-[10vh] sticky top-0 flex items-center justify-between || bg-clr-bg-dark px-4 relative">
     <div
         class="flex items-center gap-3">
         <img 
@@ -12,7 +12,7 @@
             Sarah Mode
         </h1>
     </div>
-    <div
+    <nav
         class="hidden lg:flex items-center gap-4 pr-8">
         <button
             [routerLink]="['']"
@@ -30,5 +30,15 @@
             class="text-clr-text-white text-xl | cursor-pointer transition-all duration-300 hover:text-clr-btn">
             Contact
         </button>
-    </div>
+    </nav>
+    <button
+        (click)="toggleMenu()"
+        class="flex lg:hidden gold text-xl md:text-2xl px-1 md: border border-[#ae8625] rounded-lg | fixed right-3 z-50">
+        <i [class]="isMenuOpen ? 'bi bi-x' : 'bi bi-list'"></i>
+    </button>
+
+    <app-menu-toggle
+        [isOpen]="isMenuOpen"
+        (closed)="closeMenu()"
+    ></app-menu-toggle>
 </div>

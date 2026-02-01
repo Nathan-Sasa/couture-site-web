@@ -17,6 +17,7 @@
 
 .wrap::after{
     content: '|';
+    color: #ae8625;
     animation: blink 1s infinite;
 }
 @keyframes blink {

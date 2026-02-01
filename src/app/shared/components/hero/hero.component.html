@@ -31,9 +31,7 @@
                 [wordDelay]="1800"
                 [betweenDelay]="600"
                 [pauseOnHover]="false"
-                class="hidden lg:flex text-clr-text-white font-mono text-lg h-10">
-                <!-- haute couture -->
-                
+                class="hidden lg:flex text-clr-text-white font-mono text-lg h-8 border-r border-[#ae8625] flex items-center">
             </p>
         </div>
         <div
@@ -42,15 +40,15 @@
                 class="gold text-4xl md:text-7xl lg:text-5xl xl:text-7xl font-erliana py-4">
                 Sarah Mode
             </h2>
-            <p class="flex lg:hidden text-clr-text-white font-mono text-lg md:text-3xl">
-                <a 
-                    href="" 
-                    class="typewrite" 
-                    data-period="2000" 
-                    data-type='[ "Developper Front-end", "Data analyst", "Developper python junior", "Ingénieur maintenance"]'>
-                </a>
-                <span class="wrap">
-                </span> 
+            <p 
+                appTextWriter
+                [words]="typeText"
+                [typeSpeed]="140"
+                [deleteSpeed]="80"
+                [wordDelay]="1800"
+                [betweenDelay]="600"
+                [pauseOnHover]="false"
+                class="flex lg:hidden text-clr-text-white font-mono text-lg md:text-3xl h-12">
             </p>
             <button
                 class="bg-clr-btn px-8 py-2 rounded-2xl text-xl font-semibold text-clr-bg-dark cursor-pointer || max-lg:mt-8 || btn-gold">
@@ -58,4 +56,8 @@
             </button>
         </div>
     </div>
+    <!-- <div
+        class="absolute bottom-0 left-1/2">
+        <i class="bi bi-arrow-bottom"></i>
+    </div> -->
 </div>
