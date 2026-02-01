@@ -1,0 +1,61 @@
+<div
+    class="w-full h-full bg-clr-bg-dark relative p-4">
+    <div
+        class="absolute left-1/2 top-1/4 lg:top-1/2 -translate-y-1/2 -translate-x-1/2">
+        <div class="banner w-24 h-56 md:w-44 md:h-76 ||">
+        </div>
+        <div
+            class="door h-56 w-24 md:h-76 md:w-44 bg-clr-bg-dark absolute top-1 md:top-2 -left-1 -translate-x-2 flex items-center justify-end ||">
+            <img 
+                src="assets/img/sarah-logo.png" 
+                alt="sarah-logo"
+                class="h-40 md:h-50 flex lg:hidden"
+            >
+        </div>
+    </div>
+
+    <div
+        class="w-full h-full flex flex-col items-center justify-center  border-clr-btn || lg:flex-row lg:items-center lg:justify-between relative">
+        <div
+            class="flex flex-col items-center justify-center w-1/2 h-full">
+            <img 
+                src="assets/img/sarah-logo.png" 
+                alt="sarah-logo"
+                class=" hidden lg:flex lg:h-70 2xl:h-90"
+            >
+            <p 
+                appTextWriter
+                [words]="typeText"
+                [typeSpeed]="140"
+                [deleteSpeed]="80"
+                [wordDelay]="1800"
+                [betweenDelay]="600"
+                [pauseOnHover]="false"
+                class="hidden lg:flex text-clr-text-white font-mono text-lg h-10">
+                <!-- haute couture -->
+                
+            </p>
+        </div>
+        <div
+            class=" flex flex-col items-center lg:justify-center w-full lg:w-1/2 h-full">
+            <h2
+                class="gold text-4xl md:text-7xl lg:text-5xl xl:text-7xl font-erliana py-4">
+                Sarah Mode
+            </h2>
+            <p class="flex lg:hidden text-clr-text-white font-mono text-lg md:text-3xl">
+                <a 
+                    href="" 
+                    class="typewrite" 
+                    data-period="2000" 
+                    data-type='[ "Developper Front-end", "Data analyst", "Developper python junior", "Ingénieur maintenance"]'>
+                </a>
+                <span class="wrap">
+                </span> 
+            </p>
+            <button
+                class="bg-clr-btn px-8 py-2 rounded-2xl text-xl font-semibold text-clr-bg-dark cursor-pointer || max-lg:mt-8 || btn-gold">
+                Contact
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div
+    class="w-full h-[10vh] sticky top-0 flex items-center justify-between || bg-clr-bg-dark px-4">
+    <div
+        class="flex items-center gap-3">
+        <img 
+            src="assets/img/sarah-logo.png" 
+            alt="sarah-logo"
+            class="h-14"
+        >
+        <h1
+            class="gold font-erliana text-xl md:text-3xl">
+            Sarah Mode
+        </h1>
+    </div>
+    <div
+        class="hidden lg:flex items-center gap-4 pr-8">
+        <button
+            [routerLink]="['']"
+            [routerLinkActive]="'gold'"
+            class="text-clr-text-white text-xl | cursor-pointer transition-all duration-300 ">
+            Acceuil
+        </button>
+        <button
+            [routerLink]="['/album']"
+            class="text-clr-text-white text-xl | cursor-pointer transition-all duration-300 hover:text-clr-btn">
+            Album
+        </button>
+        <button
+            [routerLink]="['/contact']"
+            class="text-clr-text-white text-xl | cursor-pointer transition-all duration-300 hover:text-clr-btn">
+            Contact
+        </button>
+    </div>
+</div>

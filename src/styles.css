@@ -1,1 +1,165 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Erliana';
+    src: url('../public/assets/font/Erliana-Regular.ttf');
+}
+
+
+@theme {
+	/* denifition de couleurs ou theme du site */
+	/* found color --------------------- */
+	--color-clr-bg: #f5f0e9; 
+	--color-clr-bg-dark: #010c28;
+
+	/* text color ----------------- */
+	--color-clr-text: #2f2f2f;
+	--color-clr-text-white: #d9cbc2;
+	--color-clr-text-desc: #d9cbc2;
+    
+	--color-clr-text-error: #FF4500;
+    
+    --color-clr-accent: #3c5070;
+    --color-clr-btn: #e0c58f;
+
+	/* accent color ------------------------------ */
+	--color-clr-accent: #4F57C4; /* ou  615FFF */ 
+	--color-clr-hover: #615FFF; /* ou 432DD7 */
+	--color-clr-border: #F3F3F3;
+}
+
+img{
+    color: #d9cbc2;
+}
+
+@property --rotate {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+@keyframes eff {
+	from {
+		--rotate: 0deg;
+	}
+	to {
+		--rotate: 360deg;
+	}
+}
+
+.gold{
+    background: linear-gradient(
+        0deg, 
+        #ae8625, 
+        #f7ef8a, 
+        #d2ac47,
+        #edc967
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 10s ease-in;
+}
+.gold:hover{
+    animation: reflet 1s linear forwards;
+}
+
+@keyframes reflet {
+    0%{
+        background: linear-gradient(
+            0deg, 
+            #ae8625, 
+            #f7ef8a, 
+            #d2ac47,
+            #edc967
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: linear-gradient(
+            270deg, 
+            #ae8625, 
+            #f7ef8a, 
+            #d2ac47, 
+            #ae8625,
+            #edc967
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    75%{
+        background: linear-gradient(
+            300deg, 
+            #ae8625, 
+            #f7ef8a, 
+            #d2ac47, 
+            #ae8625,
+            #edc967
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(
+            0deg, 
+            #ae8625, 
+            #f7ef8a, 
+            #d2ac47, 
+            #ae8625,
+            #edc967
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.font-erliana{
+    font-family: 'Erliana';
+}
+
+.btn-gold{
+    /* background: linear-gradient(
+        0deg, 
+        var(--color-clr-btn),
+        var(--color-clr-btn),
+        var(--color-clr-btn),
+        var(--color-clr-btn)
+    ); */
+    background: var(--color-clr-btn);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-gold:hover{
+    /* animation: btn-reflet 2s linear forwards; */
+    /* background: linear-gradient(
+        0deg, 
+        #ae8625, 
+        #f7ef8a, 
+        #d2ac47,
+        #edc967
+    ); */
+    background: #ae8625;
+}
+
+/* @keyframes btn-reflet {
+    from{
+        background: linear-gradient(
+            0deg, 
+            #ae8625, 
+            #f7ef8a, 
+            #d2ac47,
+            #edc967
+        );
+    }
+    to{
+        background: linear-gradient(
+            90deg, 
+            #ae8625, 
+            #f7ef8a, 
+            #d2ac47, 
+            #ae8625,
+            #edc967
+        );
+    }
+} */

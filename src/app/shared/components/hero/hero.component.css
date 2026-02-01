@@ -1,0 +1,25 @@
+
+.banner {
+    background-image: conic-gradient(
+        from var(--rotate), 
+        var(--color-clr-bg-dark) 50%,
+        #ae8625, 
+            #f7ef8a, 
+            #d2ac47
+    );
+    animation: eff 5s linear infinite;
+    /* animation-delay: .2s; */
+}
+
+.door{
+    transform: skewY(6deg) scaleX(0.9);
+}
+
+.wrap::after{
+    content: '|';
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 50%, 100%{opacity: 1;}
+    25%, 75%{opacity: 0;}
+}
