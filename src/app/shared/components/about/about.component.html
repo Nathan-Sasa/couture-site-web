@@ -1,1 +1,120 @@
-<p>about.component works!</p>
+<section
+    class="grid grid-cols-1 lg:grid-cols-2 gap-y-0 lg:gap-y-8 ">
+
+    <div
+        class="col-span-2 h-[35vh] lg:h-[70vh] flex items-center justify-center pt-12 relative">
+        <div
+            class=" w-full h-full flex items-center justify-between relative">
+            <div 
+                *ngFor="let slide of slides ; let i = index"
+                [class.opacity-100]="i === currentIndex"
+                [class.opacity-0]="i !== currentIndex"
+                class="rounded-xl lg:rounded-3xl w-13/14 h-full flex items-center justify-between p-4 | transition-opacity duration-1000 | absolute left-1/2 -translate-x-1/2 {{slide.ColorClass}}">
+                <div
+                    class="flex flex-col items-start justify-center {{slide.text}}">
+                    <h2
+                        class="text-lg md:text-2xl lg:text-5xl font-semibold">
+                        {{slide.title}}
+                    </h2>
+                    <p
+                        class="text-sm md:text-lg lg:text-xl">
+                        {{slide.desc}}
+                    </p>
+                </div>
+                <div 
+                    class="w-1/2 h-full rounded-xl relative">
+                    <div
+                        class="absolute top-0 left-0 w-full h-full rounded-xl overflow-hidden || flex items-center justify-center || group">
+                        <img 
+                            [src]="slide.image"
+                            class=" object-bottom h-5/4 w-full transition-all duration-300"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div
+        class="col-span-2 lg:col-span-1 flex flex-col justify-center p-4">
+        <h2
+            class="text-xl md:text-3xl lg:text-3xl xl:text-5xl text-clr-accent">
+            Qui sommes-nous ?
+        </h2>
+        <ul
+            class="pl-8 mt-4 flex flex-col gap-4 font-mono text-sm md:text-xl">
+            <li
+                class="list-disc">
+                Maison de couture & stylisme
+            </li>
+            <li
+                class="list-disc">
+                Localisée dans 3 pays en Afrique
+            </li>
+            <li
+                class="list-disc">
+                Et nous livrons par tout en Afrique
+            </li>
+            <li
+                class="list-disc">
+                Prête à vous accompagner dans votre élegance
+            </li>
+            <li
+                class="list-disc">
+                Joignable <span class="text-clr-btn-hover" translate="no"> 24h/7jrs</span>
+            </li>
+        </ul>
+    </div>
+
+
+    <div
+        class="col-span-2 lg:col-span-1 flex items-center justify-center relative p-4 h-[50vh] lg:h-[70vh]">
+        <div
+            class="grid grid-cols-2 grid-rows-2 w-full h-full border border-clr-btn-hover p-2 gap-2">
+            <div 
+                class="border border-clr-btn-hover flex items-center justify-center overflow-hidden relative group"
+                >
+                <img 
+                    src="assets/img/sarah-logo.png" 
+                    alt="sarah-logo"
+                    class="absolute h-40 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 lg:group-hover:scale-150 transition-all duration-300"
+                >
+            </div>
+
+            <div 
+                class="border border-clr-btn-hover overflow-hidden relative group"
+                >
+                <span 
+                    class="mur h-56 w-24 md:h-76 md:w-44 bg-clr-bg-dark absolute top-1 md:top-2 -left-1 -translate-x-2 lg:group-hover:scale-120 transition-all duration-300">
+                </span>
+                <img 
+                    src="assets/img/about/mockup-bg-removed-Pacdora (3).png" 
+                    alt=""
+                    class="absolute h-56 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 lg:group-hover:scale-150 transition-all duration-300"
+                    >
+            </div>
+
+            <div 
+                class="border border-clr-btn-hover overflow-hidden relative group"
+                >
+                <img 
+                    src="assets/img/about/mockup-bg-removed-Pacdora (5).png" 
+                    alt=""
+                    class="absolute h-56 left-1/2 -translate-x-1/2  top-1/2 -translate-y-1/2 lg:group-hover:scale-150 transition-all duration-300"
+                >
+            </div>
+
+            <div 
+                class="border border-clr-btn-hover overflow-hidden relative group"
+                >
+                <img 
+                    src="assets/img/about/mockup-bg-removed-Pacdora (6).png"
+                    alt=""
+                    class="absolute h-56 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 lg:group-hover:scale-150 transition-all duration-300"
+                >
+            </div>
+        </div>
+    </div>
+</section>

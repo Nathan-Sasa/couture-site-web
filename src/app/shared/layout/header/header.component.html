@@ -1,5 +1,5 @@
-<div
-    class="w-full h-[10vh] sticky top-0 flex items-center justify-between || bg-clr-bg-dark px-4 relative">
+<header
+    class="w-full h-[10vh] fixed top-0 z-10 flex items-center justify-between || bg-clr-bg-dark backdrop-blur-2xl px-4">
     <div
         class="flex items-center gap-3">
         <img 
@@ -33,12 +33,13 @@
     </nav>
     <button
         (click)="toggleMenu()"
-        class="flex lg:hidden gold text-xl md:text-2xl px-1 md: border border-[#ae8625] rounded-lg | fixed right-3 z-50">
+        class="flex lg:hidden gold text-xl md:text-2xl px-1 md: border border-clr-btn-hover rounded-lg | fixed right-3 z-50">
         <i [class]="isMenuOpen ? 'bi bi-x' : 'bi bi-list'"></i>
     </button>
 
     <app-menu-toggle
         [isOpen]="isMenuOpen"
         (closed)="closeMenu()"
+        class="flex lg:hidden"
     ></app-menu-toggle>
-</div>
+</header>

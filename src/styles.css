@@ -20,7 +20,8 @@
     
 	--color-clr-text-error: #FF4500;
     
-    --color-clr-accent: #3c5070;
+    /* --color-clr-accent: #3c5070; */
+    --color-clr-accent: #112250;
     --color-clr-btn: #e0c58f;
     --color-clr-btn-hover: #ae8625;
 
@@ -114,6 +115,21 @@ img{
         -webkit-text-fill-color: transparent;
     }
 }
+
+.gold-not-hover{
+    background: linear-gradient(
+        300deg, 
+        #ae8625, 
+        #f7ef8a, 
+        #d2ac47, 
+        #ae8625,
+        #edc967
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 10s ease-in;
+}
+
 
 .font-erliana{
     font-family: 'Erliana';

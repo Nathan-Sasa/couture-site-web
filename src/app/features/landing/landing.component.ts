@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../shared/layout/header/header.component';
 import { HeroComponent } from '../../shared/components/hero/hero.component';
+import { AboutComponent } from '../../shared/components/about/about.component';
 
 @Component({
 	selector: 'app-landing',
@@ -11,7 +12,8 @@ import { HeroComponent } from '../../shared/components/hero/hero.component';
 		RouterModule,
 
 		HeaderComponent,
-		HeroComponent
+		HeroComponent,
+		AboutComponent
 	],
 	templateUrl: './landing.component.html',
 	styleUrl: './landing.component.css',

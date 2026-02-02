@@ -1,0 +1,7 @@
+img{
+    color: #5f9ea0;
+}
+
+.mur{
+    transform: skewY(20deg) scaleX(0.9);
+}
