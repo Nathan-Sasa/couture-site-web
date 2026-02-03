@@ -45,14 +45,14 @@
         "id": 7,
         "prod": "Complet pour enfant",
         "image": "assets/img/real/IMG_9771.JPG",
-        "prix": 100,
+        "prix": 50,
         "filter": "enfant"
     },
     {
         "id": 8,
         "prod": "Complet pour enfant",
         "image": "assets/img/real/IMG_9769.JPG",
-        "prix": 75,
+        "prix": 50,
         "filter": "enfant"
     }
 ]
