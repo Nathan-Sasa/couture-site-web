@@ -1,0 +1,9 @@
+label{
+    opacity: .5;
+}
+
+label:has(input[type="radio"]:checked){
+    border-color: var(--color-clr-btn-hover);
+    background: var(--color-clr-btn);
+    opacity: .5;
+}

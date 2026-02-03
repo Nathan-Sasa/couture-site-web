@@ -129,6 +129,9 @@ img{
     -webkit-text-fill-color: transparent;
     transition: all 10s ease-in;
 }
+.gold::selection{
+    background: transparent;
+}
 
 
 .font-erliana{

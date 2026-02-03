@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../shared/layout/header/header.component';
 import { HeroComponent } from '../../shared/components/hero/hero.component';
 import { AboutComponent } from '../../shared/components/about/about.component';
+import { RealisationComponent } from '../../shared/components/realisation/realisation.component';
+import { FooterComponent } from '../../shared/layout/footer/footer.component';
 
 @Component({
 	selector: 'app-landing',
@@ -13,7 +15,10 @@ import { AboutComponent } from '../../shared/components/about/about.component';
 
 		HeaderComponent,
 		HeroComponent,
-		AboutComponent
+		AboutComponent,
+		RealisationComponent,
+
+		FooterComponent
 	],
 	templateUrl: './landing.component.html',
 	styleUrl: './landing.component.css',

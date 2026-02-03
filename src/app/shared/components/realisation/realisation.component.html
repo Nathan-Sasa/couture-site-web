@@ -1,0 +1,173 @@
+<section
+    #scrollTop
+    class="w-full relative flex flex-col p-4 mt-8 pt-[11vh]">
+    <nav
+        class="w-full flex flex-col relative mb-8 border-b border-clr-btn-hover/50"> 
+        <h2
+            class="font-mono text-clr-accent/60 text-lg md:text-2xl lg:text-2xl xl:text-3xl">
+            Nos réalisations
+        </h2>
+        <div
+            class="w-full flex justify-between items-center p-3 pr-0">
+            <div
+                class="flex items-center gap-4">
+                <span
+                    class="font-semibold hidden md:flex">
+                    filtre
+                </span>
+                <i class="bi bi-filter flex md:hidden p-2 rounded-xl border border-clr-accent"></i>
+                <div
+                    class="hidden items-center gap-2 md:flex">
+                    <div>
+                        <label 
+                            for="tout"
+                            (click)="scroll()"
+                            class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                            >
+                            tout
+                            <input 
+                                [(ngModel)]="filterDefault"
+                                (change)="filteredReal = getFilteredReal()"
+                                type="radio"
+                                id="tout"
+                                value="tout"
+                                name="filter"
+                                class="hidden"
+                                checked
+                            >
+                        </label>
+                    </div>
+
+                    <div>
+                        <label 
+                            for="homme"
+                            (click)="scroll()"
+                            class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                            >
+                            Homme
+                            <input 
+                                [(ngModel)]="filterDefault"
+                                (change)="filteredReal = getFilteredReal()"
+                                type="radio"
+                                id="homme"
+                                value="homme"
+                                name="filter"
+                                class="hidden"
+                            >
+                        </label>
+                    </div>
+
+                    <div>
+                        <label 
+                            for="femme"
+                            (click)="scroll()"
+                            class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                            >
+                            Femme
+                            <input 
+                                [(ngModel)]="filterDefault"
+                                (change)="filteredReal = getFilteredReal()"
+                                type="radio"
+                                id="femme"
+                                value="femme"
+                                name="filter"
+                                class="hidden"
+                            >
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label 
+                            for="couple"
+                            (click)="scroll()"
+                            class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                            >
+                            Couple
+                            <input 
+                                [(ngModel)]="filterDefault"
+                                (change)="filteredReal = getFilteredReal()"
+                                type="radio"
+                                id="couple"
+                                value="couple"
+                                name="filter"
+                                class="hidden"
+                            >
+                        </label>
+                    </div>
+
+                    <div>
+                        <label 
+                            for="enfant"
+                            (click)="scroll()"
+                            class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                            >
+                            Enfant
+                            <input 
+                                [(ngModel)]="filterDefault"
+                                (change)="filteredReal = getFilteredReal()"
+                                type="radio"
+                                id="enfant"
+                                value="enfant"
+                                name="filter"
+                                class="hidden"
+                            >
+                        </label>
+                    </div>
+                </div>
+
+                <div
+                    >
+                    <select 
+                        [(ngModel)]="filterDefault"
+                        (change)="filteredReal = getFilteredReal()"
+                        name="" 
+                        (click)="scroll()"
+                        class="flex md:hidden border-2  opacity-50 rounded-md focus:bg-clr-btn focus:border-clr-btn-hover outline-0 transition-all duration-200 p-1"
+                        >
+                        <option value="tout">Tout</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="couple">Couple</option>
+                        <option value="enfant">Enfant</option>
+                    </select>
+                </div>
+            </div>
+
+            <button
+                [routerLink]="['/album']"
+                class="bg-clr-btn hover:bg-clr-btn-hover border border-clr-btn-hover transition duration-300 cursor-pointer text-xs px-3 py-1 rounded-xl xl:text-sm hover:text-clr-text-white text-clr-bg-dark font-mono || active:scale-95"
+                >
+                Album
+            </button>
+        </div>
+    </nav>
+
+
+    <div
+        class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 relative gap-4">
+        <div
+            *ngFor="let r of filteredReal"
+            class="border border-clr-btn-hover rounded-2xl p-2 relative">
+            <div
+                class="overflow-hidden relative w-full md:h-90 lg:h-80 xl:h-96 rounded-xl border border-clr-btn-hover">
+                <img 
+                    [src]="r.image" 
+                    alt="SM Réalisation images"
+                    class="hover:scale-120 transition-all duration-300 w-full h-full"
+                >
+            </div>
+            <div
+                class="mt-2 pl-2">
+                <h3
+                    class="font-mono font-semibold text-sm md:text-xl">
+                    {{r.prod}}
+                </h3>
+                <!-- <span>{{r.filter}}</span> -->
+                <span
+                    class="gold-not-hover">
+                    {{r.prix | currency}}
+                </span>
+            </div>
+        </div>
+    </div>
+</section>

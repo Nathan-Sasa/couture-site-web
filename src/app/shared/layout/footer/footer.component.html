@@ -1,1 +1,132 @@
-<p>footer.component works!</p>
+<section
+    class="w-full min-h-[50vh] bg-clr-bg-dark flex flex-col justify-between relative z-20 p-4 pt-8 pb-2 mt-8">
+    <div
+        class="w-full flex flex-col lg:flex-row justify-between gap-4 relative">
+        <div
+            class="w-full lg:w-3/10 mb-8 lg:mb-0">
+            <p
+                class="text-2xl text-clr-text-white">
+                Commandez avant le 14 février pour recevoir <span class="gold font-semibold text-3xl">20%</span> de reduction sur tout vos achats
+            </p>
+        </div>
+        <div
+            class="w-full lg:7/10 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4">
+            <div
+                class="lg:border-l border-clr-text-desc/20 lg:pl-4 flex flex-col gap-2">
+                <h3
+                    class="font-semibold text-sm lg:text-lg text-clr-bg tracking-wider mb-2">
+                    Lien rapide
+                </h3>
+                <a 
+                    [routerLink]="['/landing']"
+                    [routerLinkActive]="'gold-not-hover'"
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Accueil
+                </a>
+                <a 
+                    [routerLink]="['/album']"
+                     [routerLinkActive]="'gold-not-hover'"
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Album
+                </a>
+                <a 
+                    [routerLink]="['/contact']"
+                     [routerLinkActive]="'gold-not-hover'"
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Contact
+                </a>
+            </div>
+
+            <div
+                class="lg:border-l border-clr-text-desc/20 lg:pl-4 flex flex-col gap-2">
+                <h3
+                    class="font-semibold text-sm lg:text-lg text-clr-bg tracking-wider mb-2">
+                    FaQ
+                </h3>
+                <!-- [routerLink]="['']"
+                [routerLinkActive]="'gold-not-hover'" -->
+                <a 
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Qui sommes-nous ?
+                </a>
+                <!-- [routerLink]="['album']"
+                 [routerLinkActive]="'gold-not-hover'" -->
+                <a 
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Nos adresses
+                </a>
+                <!-- [routerLink]="['contact']"
+                [routerLinkActive]="'gold-not-hover'" -->
+                <a 
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Nous joindre
+                </a>
+                <!-- [routerLink]="['contact']"
+                [routerLinkActive]="'gold-not-hover'" -->
+                <a 
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Comment travaillons-nous ?
+                </a>
+            </div>
+
+            <div
+                class="lg:border-l border-clr-text-desc/20 lg:pl-4 flex flex-col gap-2">
+                <h3
+                    class="font-semibold text-sm lg:text-lg text-clr-bg tracking-wider mb-2">
+                    Suivez-nous
+                </h3>
+                <a 
+                    href=""
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    facebook
+                </a>
+                <a 
+                    href=""
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Intagram
+                </a>
+                <a 
+                    href=""
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Pinterest
+                </a>
+                <a 
+                    href=""
+                    class="text-clr-text-white hover:text-clr-btn-hover transition-all duration-300">
+                    Tiktok
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div
+        class="w-full flex items-end justify-between border-t border-clr-text-desc/20 mt-8 max-[376px]:flex-col max-[376px]:items-center"
+        >
+        <div
+            class="hidden md:flex items-end gap-2">
+            <img 
+                src="assets/img/sarah-logo.png" 
+                alt="SM Logo"
+                class="h-16"
+            >
+            <h2
+                class="gold font-erliana text-2xl">
+                Sarah Mode
+            </h2>
+        </div>
+        <p
+            class="text-clr-text-white/50">
+            &copy; février 2026, Tout droit resevé
+        </p>
+
+        <div>
+            <a
+                href=""
+                class="text-clr-text-white/50"
+                >
+                {{dev}}
+            </a>
+        </div>
+    </div>
+</section>

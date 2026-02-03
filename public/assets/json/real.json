@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "prod": "Chemise pour homme",
+        "image": "assets/img/real/IMG_9741.JPG",
+        "prix": 100,
+        "filter": "homme"
+    },
+    {
+        "id": 2,
+        "prod": "Complet decontracté",
+        "image": "assets/img/real/IMG_9760.JPG",
+        "prix": 80,
+        "filter": "homme"
+    },
+    {
+        "id": 3,
+        "prod": "Robe femme",
+        "image": "assets/img/real/IMG_9751.JPG",
+        "prix": 180,
+        "filter": "femme"
+    },
+    {
+        "id": 4,
+        "prod": "Complet femme",
+        "image": "assets/img/real/IMG_9754.JPG",
+        "prix": 110,
+        "filter": "femme"
+    },
+    {
+        "id": 5,
+        "prod": "Complet couple",
+        "image": "assets/img/real/IMG_9756.JPG",
+        "prix": 170,
+        "filter": "couple"
+    },
+    {
+        "id":6,
+        "prod": "Complet couple",
+        "image": "assets/img/real/IMG_9757.JPG",
+        "prix": 170,
+        "filter": "couple"
+    },
+    {
+        "id": 7,
+        "prod": "Complet pour enfant",
+        "image": "assets/img/real/IMG_9771.JPG",
+        "prix": 100,
+        "filter": "enfant"
+    },
+    {
+        "id": 8,
+        "prod": "Complet pour enfant",
+        "image": "assets/img/real/IMG_9769.JPG",
+        "prix": 75,
+        "filter": "enfant"
+    }
+]
