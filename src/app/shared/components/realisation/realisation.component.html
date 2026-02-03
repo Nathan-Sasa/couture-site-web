@@ -1,8 +1,8 @@
 <section
     #scrollTop
-    class="w-full relative flex flex-col p-4 mt-8 pt-[11vh]">
+    class="w-full relative flex flex-col mt-8 pt-[11vh]">
     <nav
-        class="w-full flex flex-col relative mb-8 border-b border-clr-btn-hover/50"> 
+        class="w-full flex flex-col sticky top-[10vh] mb-8 px-4 border-b border-clr-btn-hover/50 bg-clr-bg z-9"> 
         <h2
             class="font-mono text-clr-accent/60 text-lg md:text-2xl lg:text-2xl xl:text-3xl">
             Nos réalisations
@@ -124,7 +124,7 @@
                         (click)="scroll()"
                         class="flex md:hidden border-2  opacity-50 rounded-md focus:bg-clr-btn focus:border-clr-btn-hover outline-0 transition-all duration-200 p-1"
                         >
-                        <option value="tout">Tout</option>
+                        <option value="tout" (click)="scroll()">Tout</option>
                         <option value="homme">Homme</option>
                         <option value="femme">Femme</option>
                         <option value="couple">Couple</option>
@@ -144,7 +144,7 @@
 
 
     <div
-        class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 relative gap-4">
+        class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 relative gap-4 px-4">
         <div
             *ngFor="let r of filteredReal"
             class="border border-clr-btn-hover rounded-2xl p-2 relative">
