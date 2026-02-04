@@ -1,0 +1,65 @@
+<section
+    class="w-full relative">
+    <div
+        class="w-full h-screen flex flex-col items-center justify-center overflow-hidden relative">
+        <img 
+            src="assets/img/slider/IMG_9773.JPG" 
+            appParallax
+            [speed]="0.4"
+            class="layer bg h-full"
+            alt=""
+        >
+        <img 
+            src="assets/img/slider/IMG_9774.JPG" 
+            appParallax
+            [speed]="1.5"
+            class="layer mid h-full"
+            alt=""
+        >
+        <h1
+            appParallax
+            [speed]="1"
+            class="layer text-5xl">
+            Sarah Mode
+        </h1>
+        
+    </div>
+</section>
+
+<section
+    class="h-[120vh] relative">
+    <div
+        appScrollStory
+        class="text-5xl font-bold"
+        >
+        SCROLL STORY EFFECT
+    </div>
+</section>
+
+<section
+    class="h-[120vh]">
+    <div
+        appScrollSync
+        class="text-6xl font-bold bg-clr-btn-hover">
+        SYNC ANIMATION
+    </div>
+</section>
+
+<section
+    class="h-[120vh] bg-clr-btn">
+    <div
+        appScrollAnim
+        animType="combo"
+        class="text-6xl font-bold bg-clr-btn-hover">
+        SCROLL ANIMATION
+    </div>
+
+    <h2
+        appScrollAnim
+        animType="blur"
+        class="text-5xl mt-32 font-bold">
+        Sarah Mode
+    </h2>
+</section>
+
+<div class=" h-[120vh]"></div>
