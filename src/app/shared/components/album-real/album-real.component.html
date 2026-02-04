@@ -1,0 +1,173 @@
+<nav
+    #scrollTop
+    class="w-full flex items-center justify-between sticky top-0 mb-8 px-4 py-6 border-b border-clr-btn-hover/50 bg-clr-bg z-9"> 
+    <!-- <h2
+        class="font-mono text-clr-accent/60 text-lg md:text-2xl lg:text-2xl xl:text-3xl">
+        Nos réalisations
+    </h2> -->
+
+    <div
+        class="w-full flex justify-between items-center">
+        <div
+            class="flex items-center gap-4">
+            <span
+                class="font-semibold hidden md:flex">
+                filtre
+            </span>
+            <i class="bi bi-filter flex md:hidden p-1 py-2 rounded-md border border-clr-accent"></i>
+            <div
+                class="hidden items-center gap-2 md:flex">
+                <div>
+                    
+                    <label 
+                        (click)="scroll()"
+                        for="tout"
+                        class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                        >
+                        tout
+                        <input 
+                            [(ngModel)]="albumFilterDefault"
+                            (change)="albumFiltered = getFilteredAlbum()"
+                            type="radio"
+                            id="tout"
+                            value="tout"
+                            name="filter"
+                            class="hidden"
+                            checked
+                        >
+                    </label>
+                </div>
+
+                <div>
+                    <!-- (click)="scroll()" -->
+                    <label 
+                        (click)="scroll()"
+                        for="homme"
+                        class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                        >
+                        Homme
+                        <input 
+                            [(ngModel)]="albumFilterDefault"
+                            (change)="albumFiltered = getFilteredAlbum()"
+                            type="radio"
+                            id="homme"
+                            value="homme"
+                            name="filter"
+                            class="hidden"
+                        >
+                    </label>
+                </div>
+
+                <div>
+                    <!-- (click)="scroll()" -->
+                    <label 
+                        (click)="scroll()"
+                        for="femme"
+                        class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                        >
+                        Femme
+                        <input 
+                            [(ngModel)]="albumFilterDefault"
+                            (change)="albumFiltered = getFilteredAlbum()"
+                            type="radio"
+                            id="femme"
+                            value="femme"
+                            name="filter"
+                            class="hidden"
+                        >
+                    </label>
+                </div>
+                
+                <div>
+                    <!-- (click)="scroll()" -->
+                    <label 
+                        (click)="scroll()"
+                        for="couple"
+                        class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                        >
+                        Couple
+                        <input 
+                            [(ngModel)]="albumFilterDefault"
+                            (change)="albumFiltered = getFilteredAlbum()"
+                            type="radio"
+                            id="couple"
+                            value="couple"
+                            name="filter"
+                            class="hidden"
+                        >
+                    </label>
+                </div>
+
+                <div>
+                    <!-- (click)="scroll()" -->
+                    <label 
+                        (click)="scroll()"
+                        for="enfant"
+                        class="p-1 px-2 rounded-2xl border-2 cursor-pointer transition-all duration-300"
+                        >
+                        Enfant
+                        <input 
+                            [(ngModel)]="albumFilterDefault"
+                            (change)="albumFiltered = getFilteredAlbum()"
+                            type="radio"
+                            id="enfant"
+                            value="enfant"
+                            name="filter"
+                            class="hidden"
+                        >
+                    </label>
+                </div>
+            </div>
+
+            <div
+                >
+                <!-- (click)="scroll()" -->
+                <select 
+                    (click)="scroll()"
+                    [(ngModel)]="albumFilterDefault"
+                    (change)="albumFiltered = getFilteredAlbum()"
+                    name="" 
+                    class="flex md:hidden border-2  opacity-50 rounded-2xl focus:bg-clr-btn focus:border-clr-btn-hover outline-0 transition-all duration-200 p-1 py-2 text-xs"
+                    >
+                    <!-- (click)="scroll()" -->
+                    <option value="tout" (click)="scroll()">Tout</option>
+                    <option value="homme">Homme</option>
+                    <option value="femme">Femme</option>
+                    <option value="couple">Couple</option>
+                    <option value="enfant">Enfant</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <input 
+            (click)="scroll()"
+            type="text"
+            [(ngModel)]="albumSearch"
+            (input)="albumFiltered = getFilteredAlbum()"
+            placeholder="Recherche album"
+            class="md:h-9 h-10 w-50 md:w-70 pl-2 rounded-2xl outline-none opacity-50 border-2 focus:border-clr-btn-hover  :border-clr-btn-hover"
+        >
+    </div>
+</nav>
+
+<section
+    class="w-full grid grid-cols-3 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-y-4">
+    <div
+        *ngFor="let a of albumFiltered"
+        class="flex flex-col p-2">
+        <div>
+            <img 
+                [src]="a.image" 
+                alt=""
+                class="h-32"
+            >
+        </div>
+        <div
+            class="flex flex-col justify-between">
+            <p class="text-xs font-semibold line-clamp-1">{{a.prod}}</p>
+            <p>{{a.prix}}</p>
+        </div>
+    </div>
+</section>

@@ -14,6 +14,7 @@ type AnimType =
 export class ScrollAnimDirective {
 
 	@Input() animType: AnimType = 'fade';
+	@Input() rotateDeg: number  = -10
 	private el: HTMLElement;
 
 	constructor(
@@ -49,7 +50,7 @@ export class ScrollAnimDirective {
 				this.el.style.filter = `blur(${this.map(p, 0, 1, 8, 0)}px)`
 				break;
 			case 'rotate':
-				this.el.style.transform = `rotate(${this.map(p, 0, 1, -10, 0)}deg)`
+				this.el.style.transform = `rotate(${this.map(p, 0, 1, this.rotateDeg, 0)}deg)`
 				break;
 			case 'combo':
 				// this.el.style.opacity = p.toString()
