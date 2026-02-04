@@ -22,6 +22,17 @@
             [speed]="1.8"
             class="layer mid h-full  bg-clr-bg flex items-center justify-between p-4"
             >
+
+            <nav
+                class="absolute top-0 py-2 z-9">
+                <button
+                    [routerLink]="['']"
+                    class="flex items-center gap-2 cursor-pointer hover:text-clr-btn-hover transition-all duration-300">
+                    <i class="bi bi-arrow-left"></i>
+                    Acuceil
+                </button>
+            </nav>
+
             <div
                 class="hidden md:flex flex-col px-4 gap-2 text-clr-text-white lg:text-xl lg:hover:text-3xl hover:text-clr-btn *:hover:text-clr-btn-hover *:transition-all *:duration-200 *:ease-in w-1/13">
                 <a href="">

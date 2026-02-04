@@ -4,6 +4,7 @@ import { FooterComponent } from '../../shared/layout/footer/footer.component';
 import { ParallaxDirective } from '../../shared/directives/parallax.directive';
 import { TestComponent } from '../../shared/components/test/test.component'
 import { AlbumRealComponent } from '../../shared/components/album-real/album-real.component'
+import { RouterModule } from '@angular/router';
 
 // TestComponent
 
@@ -11,6 +12,7 @@ import { AlbumRealComponent } from '../../shared/components/album-real/album-rea
     selector: 'app-album.component',
     imports: [
         CommonModule,
+		RouterModule,
         FooterComponent,
         ParallaxDirective,
 		AlbumRealComponent
