@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild, ElementRef, HostListener } from '@angular/core';
 import { FooterComponent } from '../../shared/layout/footer/footer.component';
 import { ParallaxDirective } from '../../shared/directives/parallax.directive';
 import { TestComponent } from '../../shared/components/test/test.component'
@@ -16,13 +16,20 @@ import { RouterModule } from '@angular/router';
         FooterComponent,
         ParallaxDirective,
 		AlbumRealComponent
-		
+
     ],
     templateUrl: './album.component.html',
     styleUrl: './album.component.css',
 })
 export class AlbumComponent implements OnInit, OnDestroy {
 
+	isScrollTop = false
+
+	constructor (
+	) {
+	}
+
+	@ViewChild('scrollToTop') scrollToTop!: ElementRef
 
     currentIndex = 0;
     intervalId: any;
@@ -117,5 +124,25 @@ export class AlbumComponent implements OnInit, OnDestroy {
         this.intervalId = setInterval(() => {
             this.currentIndex = (this.currentIndex + 1) % this.slides.length;
         }, 5000);
+    }
+
+	// @HostListener('window:scroll')
+	scroll(){
+		this.scrollToTop.nativeElement.scrollIntoView({
+			behavior: 'smooth',
+			Block: 'start'
+		})
+	}
+
+	@HostListener('window:scroll', [])
+    onWindowScroll() {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        this.isScrollTop = scrollY > 300
+		console.log(scrollY , this.isScrollTop)
+		// if(scrollY > 100){
+		// 	this.isScrollTop = true
+		// }else{
+		// 	this.isScrollTop = false
+		// }
     }
 }

@@ -6,3 +6,10 @@
     top: 0;
     will-change: transform;
 }
+
+.btn-scroll{
+    display: none;
+}
+.btn-scroll.scrollTo{
+    display: flex;
+}

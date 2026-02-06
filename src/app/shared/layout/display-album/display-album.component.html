@@ -1,1 +1,49 @@
-<p>display-album.component works!</p>
+<section
+    class="h-full w-full flex flex-col p-4">
+    <nav
+        class="w-full">
+        <button
+            [routerLink]="['/album']"
+            class="flex items-center gap-2 bg-clr-btn/70 font-semibold hover:bg-clr-btn-hover/70  px-2 py-1 rounded-2xl border border-clr-btn-hover transition-all duration-300 cursor-pointer">
+            <i class="bi bi-arrow-left"></i>
+            <span>Retour</span>
+        </button>
+    </nav>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 xl:grid-cols-6 mt-4 min-h-[90vh]">
+        <div
+            class="h-3/4 md:h-3/4 lg:h-3/5 lg:col-span-2 flex items-center justify-center lg:justify-start relative">
+            <img 
+                [src]="albumRealById.image" 
+                [alt]="albumRealById.prod"
+                class="h-full w-full md:w-4/5 lg:w-full lg:h-full"
+            >
+        </div>
+        <div
+            class="h-2/2 md:h-3/4 lg:h-3/5 flex flex-col lg:col-span-2 xl:col-span-4 p-2 xl:pl-4">
+            <h2
+                class="font-bold text-2xl md:text-3xl xl:text-4xl">
+                {{albumRealById.prod}}
+            </h2>
+            <p
+                class="text-clr-accent mt-3 text-sm md:text-xl">
+                <strong>Description</strong> : {{albumRealById.search}}
+            </p>
+            <p
+                class="text-clr-accent mt-3 text-sm md:text-xl">
+                <strong>Prixe</strong> : {{albumRealById.prix | currency}}
+            </p>
+            <p
+                class="text-clr-accent mt-3 text-xs md:text-xl">
+                <strong>Durée</strong> : 5 jours
+            </p>
+            <p
+                class="text-clr-accent mt-3 text-sm md:text-xl @max-xs:table">
+                <strong>Livraison</strong> : Partout en Afrique en 5 jours 
+            </p>
+        </div>
+    </div>
+    <!-- <div>
+
+    </div> -->
+</section>

@@ -1,9 +1,15 @@
-<!-- <section
-    class="w-full relative">
-    <app-test></app-test>
-</section> -->
 <section
+    #scrollToTop
     class="w-full relative">
+
+    <span
+        (click)="scroll()"
+        class="scrollTo"
+        [class.scrollTo]="isScrollTop"
+        class="btn-scroll p-2 w-10 h-10 bg-clr-btn rounded-full border-2 border-clr-btn-hover hover:bg-clr-btn-hover hover:text-clr-text-white z-20 fixed bottom-2.5 right-4  items-center justify-center transition-all duration-300 cursor-pointer">
+        <i class="bi bi-arrow-up font-bold"></i>
+    </span>
+
     <div
         class="w-full h-[40vh] md:h-[50vh] lg:h-screen flex flex-col items-center justify-center overflow-hidden relative">
         <div

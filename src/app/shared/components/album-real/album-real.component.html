@@ -127,7 +127,7 @@
                     [(ngModel)]="albumFilterDefault"
                     (change)="albumFiltered = getFilteredAlbum()"
                     name="" 
-                    class="flex md:hidden border-2  opacity-50 rounded-2xl focus:bg-clr-btn focus:border-clr-btn-hover outline-0 transition-all duration-200 p-1 py-2 text-xs"
+                    class="flex md:hidden border-2  opacity-50 rounded-2xl focus:bg-clr-btn focus:border-clr-btn-hover outline-0 transition-all duration-200 p-1 max-[321px]:px-0 py-2 text-xs"
                     >
                     <!-- (click)="scroll()" -->
                     <option value="tout" (click)="scroll()">Tout</option>
@@ -147,7 +147,7 @@
             [(ngModel)]="albumSearch"
             (input)="albumFiltered = getFilteredAlbum()"
             placeholder="Recherche album"
-            class="md:h-9 h-10 w-50 md:w-70 pl-2 rounded-2xl outline-none opacity-50 border-2 focus:border-clr-btn-hover  :border-clr-btn-hover"
+            class="md:h-9 h-10 max-[321px]:w-45 w-50 md:w-70 pl-2 rounded-2xl outline-none opacity-50 border-2 focus:border-clr-btn-hover  :border-clr-btn-hover"
         >
     </div>
 </nav>
@@ -161,13 +161,18 @@
             <img 
                 [src]="a.image" 
                 alt=""
-                class="h-32"
+                class="h-32 w-full"
             >
         </div>
         <div
             class="flex flex-col justify-between">
             <p class="text-xs font-semibold line-clamp-1">{{a.prod}}</p>
             <p class="gold-not-hover text-sm">{{a.prix | currency}}</p>
+            <button
+                [routerLink]="['/album', a.id]"
+                class="bg-clr-btn border border-clr-btn-hover rounded-2xl cursor-pointer">
+                voir
+            </button>
         </div>
     </div>
 </section>

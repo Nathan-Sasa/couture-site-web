@@ -51,16 +51,280 @@
         "id": 7,
         "prod": "Veste à fermeture éclaire",
         "image": "assets/img/album/real/IMG_9740.JPG",
-        "prix": 50,
+        "prix": 85,
         "filter": "homme",
         "search":"veste pour homme veste sans bouton veste à fermeture eclair deux poches"
     },
     {
         "id": 8,
         "prod": "Chemise homme",
-        "image": "assets/img/real/IMG_9769.JPG",
-        "prix": 50,
+        "image": "assets/img/album/real/IMG_9741.JPG",
+        "prix": 80,
         "filter": "homme",
-        "search":"chemise pour homme 2 poches deux poches chemise à bouton"
+        "search":"chemise pour homme deux poches chemise à bouton"
+    },
+    {
+        "id": 9,
+        "prod": "Chemise homme",
+        "image": "assets/img/album/real/IMG_9742.JPG",
+        "prix": 95,
+        "filter": "homme",
+        "search":"chemise pour homme deux poches chemise à bouton"
+    },
+    {
+        "id": 10,
+        "prod": "Chemise homme",
+        "image": "assets/img/album/real/IMG_9743.JPG",
+        "prix": 90,
+        "filter": "homme",
+        "search":"chemise pour homme deux poches chemise à bouton"
+    },
+    {
+        "id": 11,
+        "prod": "Chemise homme",
+        "image": "assets/img/album/real/IMG_9744.JPG",
+        "prix": 90,
+        "filter": "homme",
+        "search":"chemise pour homme deux poches chemise à bouton"
+    },
+    {
+        "id": 12,
+        "prod": "Complet Safari",
+        "image": "assets/img/album/real/IMG_9745.JPG",
+        "prix": 100,
+        "filter": "homme",
+        "search":"complet safari  pour homme deux poches"
+    },
+    {
+        "id": 13,
+        "prod": "Boubou homme",
+        "image": "assets/img/album/real/IMG_9746.JPG",
+        "prix": 100,
+        "filter": "homme",
+        "search":"bouou  pour homme sans poche"
+    },
+    {
+        "id": 14,
+        "prod": "Basin homme",
+        "image": "assets/img/album/real/IMG_9747.JPG",
+        "prix": 180,
+        "filter": "homme",
+        "search":"basin  pour homme sans poche"
+    },
+    {
+        "id": 15,
+        "prod": "Basin homme",
+        "image": "assets/img/album/real/IMG_9748.JPG",
+        "prix": 200,
+        "filter": "homme",
+        "search":"basin  pour homme sans poche"
+    },
+    {
+        "id": 16,
+        "prod": "Basin et chapeau",
+        "image": "assets/img/album/real/IMG_9749.JPG",
+        "prix": 210,
+        "filter": "homme",
+        "search":"basin et chapeau d'accompagnement pour homme sans poche"
+    },
+    {
+        "id": 17,
+        "prod": "Boubou homme",
+        "image": "assets/img/album/real/IMG_9750.JPG",
+        "prix": 120,
+        "filter": "homme",
+        "search":"boubou pour homme sans poche"
+    },
+    {
+        "id": 18,
+        "prod": "Robe",
+        "image": "assets/img/album/real/IMG_9751.JPG",
+        "prix": 180,
+        "filter": "femme",
+        "search":"jolie robe pour femme en tissu de pagne"
+    },
+    {
+        "id": 19,
+        "prod": "Blouse & Pantalon femme",
+        "image": "assets/img/album/real/IMG_9752.JPG",
+        "prix": 120,
+        "filter": "femme",
+        "search":"complet blouse et pantalon"
+    },
+    {
+        "id": 20,
+        "prod": "Basin en pagne pour femme",
+        "image": "assets/img/album/real/IMG_9753.JPG",
+        "prix": 120,
+        "filter": "femme",
+        "search":"un basin pour femme avec un style moderne"
+    },
+    {
+        "id": 21,
+        "prod": "Basin en pagne pour femme",
+        "image": "assets/img/album/real/IMG_9754.JPG",
+        "prix": 120,
+        "filter": "femme",
+        "search":"un basin pour femme avec un style moderne"
+    },
+    {
+        "id": 22,
+        "prod": "Boubou couple",
+        "image": "assets/img/album/real/IMG_9755.JPG",
+        "prix": 150,
+        "filter": "couple",
+        "search":"un boubou assorti pour couple"
+    },
+    {
+        "id": 23,
+        "prod": "Tenue assorti pour couple",
+        "image": "assets/img/album/real/IMG_9756.JPG",
+        "prix": 140,
+        "filter": "couple",
+        "search":"un boubou assorti pour couple"
+    },
+    {
+        "id": 24,
+        "prod": "Tenue assorti pour couple",
+        "image": "assets/img/album/real/IMG_9757.JPG",
+        "prix": 130,
+        "filter": "couple",
+        "search":"complet chemise pantalon culotte assorti pour couple"
+    },
+    {
+        "id": 25,
+        "prod": "Tenue assorti pour couple",
+        "image": "assets/img/album/real/IMG_9758.JPG",
+        "prix": 140,
+        "filter": "couple",
+        "search":"complet chemise pantalon culotte assorti pour couple"
+    },
+    {
+        "id": 26,
+        "prod": "Tenue assorti pour couple",
+        "image": "assets/img/album/real/IMG_9759.JPG",
+        "prix": 140,
+        "filter": "couple",
+        "search":"complet chemise pantalon culotte assorti pour couple"
+    },
+    {
+        "id": 27,
+        "prod": "Chemise Culotte homme",
+        "image": "assets/img/album/real/IMG_9760.JPG",
+        "prix": 100,
+        "filter": "homme",
+        "search":"complet chemise culotte pour homme"
+    },
+    {
+        "id": 28,
+        "prod": "Complet couple",
+        "image": "assets/img/album/real/IMG_9761.JPG",
+        "prix": 140,
+        "filter": "couple",
+        "search":"tenue assorti couple chemise pantalon pour homme et robe pour femme"
+    },
+    {
+        "id": 29,
+        "prod": "Complet couple",
+        "image": "assets/img/album/real/IMG_9762.JPG",
+        "prix": 110,
+        "filter": "couple",
+        "search":"tenue assorti couple chemise pour homme et robe pour femme"
+    },
+    {
+        "id": 30,
+        "prod": "Complet couple",
+        "image": "assets/img/album/real/IMG_9763.JPG",
+        "prix": 150,
+        "filter": "couple",
+        "search":"tenue assorti couple chemise pour homme et robe pour femme"
+    },
+    {
+        "id": 31,
+        "prod": "Tenue de mariage ou cérémonie couple",
+        "image": "assets/img/album/real/IMG_9764.JPG",
+        "prix": 300,
+        "filter": "couple",
+        "search":"complet sari pour homme et robe pour femme"
+    },
+    {
+        "id": 32,
+        "prod": "Complet homme",
+        "image": "assets/img/album/real/IMG_9765.JPG",
+        "prix": 100,
+        "filter": "homme",
+        "search":"complet décontracté pour homme"
+    },
+    {
+        "id": 33,
+        "prod": "Complet stylé femme",
+        "image": "assets/img/album/real/IMG_9766.JPG",
+        "prix": 125,
+        "filter": "femme",
+        "search":"complet stylé pour femme "
+    },
+    {
+        "id": 34,
+        "prod": "Basin femme",
+        "image": "assets/img/album/real/IMG_9767.JPG",
+        "prix": 135,
+        "filter": "femme",
+        "search":"Basin stylé pour femme "
+    },
+    {
+        "id": 35,
+        "prod": "Tenue traditionnelle",
+        "image": "assets/img/album/real/IMG_9768.JPG",
+        "prix": 60,
+        "filter": "enfant",
+        "search":"tenue tranditionnelle pour enfant "
+    },
+    {
+        "id": 36,
+        "prod": "Complet enfant",
+        "image": "assets/img/album/real/IMG_9769.JPG",
+        "prix": 45,
+        "filter": "enfant",
+        "search":"complet chemise pantalon pour enfant"
+    },
+    {
+        "id": 37,
+        "prod": "Veste enfant",
+        "image": "assets/img/album/real/IMG_9770.JPG",
+        "prix": 90,
+        "filter": "enfant",
+        "search":"complet veste pour enfant"
+    },
+    {
+        "id": 38,
+        "prod": "Complet enfant",
+        "image": "assets/img/album/real/IMG_9771.JPG",
+        "prix": 50,
+        "filter": "enfant",
+        "search":"complet decontracté chemise pantalon pour enfant"
+    },
+    {
+        "id": 39,
+        "prod": "Combo enfant",
+        "image": "assets/img/album/real/IMG_9772.JPG",
+        "prix": 60,
+        "filter": "enfant",
+        "search":"joli combo chemise pantalon cravate pour enfant"
+    },
+    {
+        "id": 40,
+        "prod": "Combo enfant",
+        "image": "assets/img/album/real/IMG_9773.JPG",
+        "prix": 90,
+        "filter": "enfant",
+        "search":"joli combo chemise pantalon pour enfant"
+    },
+    {
+        "id": 41,
+        "prod": "Vest enfant",
+        "image": "assets/img/album/real/IMG_9774.JPG",
+        "prix": 100,
+        "filter": "enfant",
+        "search":"veste pour enfant"
     }
 ]
