@@ -16,6 +16,7 @@ import { RealService } from '../../../core/services/real.service';
 export class DisplayAlbumComponent implements OnInit {
 
 	albumRealById: IAlbum = <IAlbum>{}
+	command = ''
 
 	constructor (
 		private route: ActivatedRoute,
@@ -37,6 +38,7 @@ export class DisplayAlbumComponent implements OnInit {
 		this.albumService.getAlbum().subscribe({
 			next: (res: IAlbum[]) => {
 				this.albumRealById = res.find(A => A.id === id ) || <IAlbum>{} as IAlbum
+				
 			}
 		})
 

@@ -114,9 +114,7 @@ export class AlbumComponent implements OnInit, OnDestroy {
 		clearInterval(this.intervalId)
 
 		setTimeout(() => {
-			this.intervalId = setInterval(() => {
-				this.currentIndex = (this.currentIndex + 1) % this.slides.length;
-			}, 5000);
+			this.startAutoSlide()
 		},5000)
     }
 
@@ -139,10 +137,5 @@ export class AlbumComponent implements OnInit, OnDestroy {
         const scrollY = window.scrollY || document.documentElement.scrollTop;
         this.isScrollTop = scrollY > 300
 		console.log(scrollY , this.isScrollTop)
-		// if(scrollY > 100){
-		// 	this.isScrollTop = true
-		// }else{
-		// 	this.isScrollTop = false
-		// }
     }
 }

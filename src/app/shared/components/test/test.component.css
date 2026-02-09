@@ -6,3 +6,23 @@
     top: 0;
     will-change: transform;
 }
+
+
+/* angular doc */
+
+/* background-clip text style gradient animate  */
+
+/* --pink-to-highlight-to-purple-to-blue-horizontal-gradient: linear-gradient( 140deg, var(--vivid-pink) 0%, var(--vivid-pink) 15%, color-mix(in srgb, var(--vivid-pink), var(--electric-violet) 50%) 25%, color-mix(in srgb, var(--vivid-pink), var(--electric-violet) 10%) 35%, color-mix(in srgb, var(--vivid-pink), var(--orange-red) 50%) 42%, color-mix(in srgb, var(--vivid-pink), var(--orange-red) 50%) 44%, color-mix(in srgb, var(--vivid-pink), var(--page-background) 70%) 47%, var(--electric-violet) 48%, var(--bright-blue) 60% ); */
+
+/* a.docs-card span {
+    background: var(--pink-to-highlight-to-purple-to-blue-horizontal-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: .875rem;
+    margin-block: 0;
+    transition: background-position 1.8s ease-out;
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+    position: relative;
+} */

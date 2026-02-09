@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 import { RealService } from '../../../core/services/real.service';
 import { IAlbum } from '../../../core/interfaces/interfaces';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from '../../layout/footer/footer.component';
 
 @Component({
   selector: 'app-album-real',
 	imports: [
 		RouterModule,
 		CommonModule,
-		FormsModule
+		FormsModule,
+		FooterComponent
 	],
 	templateUrl: './album-real.component.html',
 	styleUrl: './album-real.component.css',
