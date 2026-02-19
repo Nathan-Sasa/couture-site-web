@@ -1,0 +1,168 @@
+.contact-drap{
+    background: linear-gradient(
+        300deg, 
+        #ae8625 20%, 
+        #f7ef8a 60%, 
+        #d2ac47 70%, 
+        #ae8625,
+        #edc967
+    );
+    animation:  background 3s linear infinite;
+}
+
+/* @keyframes background {
+    0%{
+        background: linear-gradient(
+            300deg, 
+            #ae8625 20%, 
+            #f7ef8a 60%, 
+            #d2ac47 70%, 
+            #ae8625,
+            #edc967
+        );
+    }
+    25%{
+        background: linear-gradient(
+            300deg, 
+            #ae8625 50%, 
+            #f7ef8a 30%, 
+            #d2ac47 70%, 
+            #ae8625,
+            #edc967
+        );
+    }
+} */
+
+
+
+/* ================================= */
+label{
+    transition: all .3s ease;
+}
+label:has(input[type="text"]:focus){
+    border: 2px solid var(--color-clr-btn-hover);
+}
+label:has(input[type="text"]:valid){
+    border-width: 2px;
+}
+label:hover{
+    border-color: var(--color-clr-btn-hover);
+}
+
+label:has(textarea:focus){
+    border: 2px solid var(--color-clr-btn-hover);
+}
+label:has(textarea:valid){
+    border-width: 2px;
+}
+
+
+input[type="text"]:focus~ span,
+input[type="text"]:valid~ span{
+    top: -10%;
+    font-size: .8rem;
+    border-radius: 4px;
+    width: 30%;
+}
+
+
+textarea:focus~ span,
+textarea:valid~ span{
+    top: -5%;
+    font-size: .8rem;
+    border-radius: 4px;
+    width: 25%;
+}
+
+button:has(textarea:valid),
+button:has(input:valid){
+    background: var(--color-clr-btn-hover);
+}
+
+/* ================================ */
+
+.social-content{
+    font-size: 2rem;
+    transition: all .2s linear;
+}
+
+.social-content:hover{
+    font-size: 3rem;
+}
+
+/* 
+.social-container{
+    animation: rotate-left 10s linear infinite;
+}
+.social-container:hover{
+    animation-play-state: paused;
+}
+
+@keyframes rotate-left {
+    from{
+        transform: rotateZ(360deg);
+    }to{
+        transform: rotateZ(0deg);
+    }
+}
+
+.social-content{
+    position: absolute;
+    content: '';
+    animation: rotate-right 10s linear infinite;
+    font-size: 2rem;
+}
+
+.social-container:hover .social-content{
+    animation-play-state: paused;
+}
+
+@keyframes rotate-right {
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+.soc-1{
+    left: 50%;
+    top: 0;
+}
+
+.soc-2{
+    bottom: 0;
+    left: 50%;
+}
+
+.soc-3{
+    top: 50%;
+    left: 2%;
+}
+
+.soc-4{
+    top: 50%;
+    right: 2%;
+}
+
+.soc-5{
+    top: 15%;
+    left: 15%;
+}
+
+.soc-6{
+    top: 15%;
+    right: 15%;
+}
+
+.soc-7{
+    bottom: 10%;
+    right: 15%;
+}
+
+.soc-8{
+    bottom: 10%;
+    left: 15%;
+} */
